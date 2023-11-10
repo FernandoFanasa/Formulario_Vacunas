@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campaña de Vacunación</title>
+     
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="titulo-container">
+        <h1>Campaña de Vacunación</h1>
+    </div>
+     
+    <div id="container">
+        
+    <form action="procesar_formulario.php" method="post" id="formvacunas">
+
+        <label for="id">Id:</label>
+        <input type="text" id="id" name="id"><br><br>
+
+        <label for="vEmpleado_conServicio">¿Actualmente eres empleado y cuentas con Servicio Médico de VITAMEDICA?</label>
+        <select id="vEmpleado_conServicio" name="vEmpleado_conServicio" class="opciones-unicas">
+            <option value="null"></option>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="nNumEmpleado">Número de Empleado:</label>
+        <input type="text" id="nNumEmpleado" name="nNumEmpleado"><br><br>
+
+        <label for="vRegionPerteneciente">Menciona la región a la que pertences:</label>
+        <select id="vRegionPerteneciente" name="vRegionPerteneciente" class="opciones-cortas">
+            <option value="null">    </option>
+            <option value="CDMX">CDMX</option>
+            <option value="INTERIOR DE LA REPÚBLICA">INTERIOR DE LA REPÚBLICA</option>
+        </select><br><br>
+
+        <label for="vRegionPerteneciente">Elige la sede de la CDMX a la cual estariás acudiendo:</label>
+        <select id="vRegionPerteneciente" name="vRegionPerteneciente" class="opciones-largas">
+            <option value=" "> </option>
+            <option value="10- TIJUANA - Paseo de los Héroes #10101, Zona Urbana Río,5 to piso, C.P. 22010, Tijuana B.C.">10- TIJUANA - Paseo de los Héroes #10101, Zona Urbana Río,5 to piso, C.P. 22010, Tijuana B.C.</option>
+            <option value="1- TOLUCA - (NO se acepta el ingreso a menores de edad) - Paseo Tollocan No. 721 Col. Vértice, Toluca Estado de México, C.P. 50150">1- TOLUCA - (NO se acepta el ingreso a menores de edad) - Paseo Tollocan No. 721 Col. Vértice, Toluca Estado de México, C.P. 50150</option>
+            <option value="1- TOLUCA - Paseo Tollocan No. 721 Col. Vértice, Toluca Estado de México, C.P. 50150">1- TOLUCA - Paseo Tollocan No. 721 Col. Vértice, Toluca Estado de México, C.P. 50150</option>
+            <option value="10- TIJUANA - Paseo de los Héroes #10101, Zona Urbana Río,5 to piso, C.P. 22010, Tijuana B.C.">10- TIJUANA - Paseo de los Héroes #10101, Zona Urbana Río,5 to piso, C.P. 22010, Tijuana B.C.</option>
+            <option value="11- VERACRUZ - (NO se acepta el ingreso a menores de edad) - Edificio Veranda, Blvd Ávila Camacho #185, 94294 Boca Del Río, Veracruz, 4to piso.">11- VERACRUZ - (NO se acepta el ingreso a menores de edad) - Edificio Veranda, Blvd Ávila Camacho #185, 94294 Boca Del Río, Veracruz, 4to piso.</option>
+            <option value="11- VERACRUZ - Edificio Veranda, Blvd Ávila Camacho #185, 94294 Boca Del Río, Veracruz, 4to piso.">11- VERACRUZ - Edificio Veranda, Blvd Ávila Camacho #185, 94294 Boca Del Río, Veracruz, 4to piso.</option>
+            <option value="12- HERMOSILLO - Blvd. Luis Encinas y Gpe. Victoria #219 Piso 1, Col. San Benito, Hermosillo, Sonora, C.P.83190">12- HERMOSILLO - Blvd. Luis Encinas y Gpe. Victoria #219 Piso 1, Col. San Benito, Hermosillo, Sonora, C.P.83190</option>
+            <option value="13- CULIACÁN - Blvd. Zapata y Morelos #315, 2do piso, Col. Almada, Culiacán, Sinaloa, C.P.80200">13- CULIACÁN - Blvd. Zapata y Morelos #315, 2do piso, Col. Almada, Culiacán, Sinaloa, C.P.80200</option>
+            <option value="14- MORELIA - (NO se acepta el ingreso a menores de edad) -Madero Oriente #63 Col, Centro, Morelia Mich">14- MORELIA - (NO se acepta el ingreso a menores de edad) -Madero Oriente #63 Col, Centro, Morelia Mich</option>
+            <option value="14- MORELIA - Madero Oriente #63 Col, Centro, Morelia Mich">14- MORELIA - Madero Oriente #63 Col, Centro, Morelia Mich</option>
+            <option value="15- GUADALAJARA - (NO se acepta el ingreso a menores de edad) - Av. Adolfo Lopez Mateos Nte # 161 | Piso 3 | Col. Ladrón de Guevara. Guadalajara, Jalisco, C.P. 44600">15- GUADALAJARA - (NO se acepta el ingreso a menores de edad) - Av. Adolfo Lopez Mateos Nte # 161 | Piso 3 | Col. Ladrón de Guevara. Guadalajara, Jalisco, C.P. 44600</option>
+            <option value="15- GUADALAJARA - Av. Adolfo Lopez Mateos Nte # 161 | Piso 3 | Col. Ladrón de Guevara. Guadalajara, Jalisco, C.P. 44600">15- GUADALAJARA - Av. Adolfo Lopez Mateos Nte # 161 | Piso 3 | Col. Ladrón de Guevara. Guadalajara, Jalisco, C.P. 44600</option>
+            <option value="16- MÉRIDA - (Se aceptan menores de EDAD) -SEDE FESA (Por confirmar)">16- MÉRIDA - (Se aceptan menores de EDAD) -SEDE FESA (Por confirmar)</option>
+            <option value="16- MÉRIDA - SEDE FESA (Por confirmar)">16- MÉRIDA - SEDE FESA (Por confirmar)</option>
+            <option value="17- SAN LUIS POTOSÍ - (NO se acepta el ingreso a menores de edad) - Av. Venustiano Carranza No. 2240 Col Polanco San Luis Potosí, SLP CP 78220">17- SAN LUIS POTOSÍ - (NO se acepta el ingreso a menores de edad) - Av. Venustiano Carranza No. 2240 Col Polanco San Luis Potosí, SLP CP 78220</option>
+            <option value="17- SAN LUIS POTOSÍ - Av. Venustiano Carranza No. 2240 Col Polanco San Luis Potosí, SLP CP 78220">17- SAN LUIS POTOSÍ - Av. Venustiano Carranza No. 2240 Col Polanco San Luis Potosí, SLP CP 78220</option>
+            <option value="18- HIDALGO - SEDE FESA (Por confirmar)">18- HIDALGO - SEDE FESA (Por confirmar)</option>
+            <option value="18- HIDALGO - (Se aceptan menores de EDAD) - SEDE FESA (Por confirmar)">18- HIDALGO - (Se aceptan menores de EDAD) - SEDE FESA (Por confirmar)</option>
+            <option value="19- AGUASCALIENTES - SEDE FESA (Por confirmar)">19- AGUASCALIENTES - SEDE FESA (Por confirmar)</option>
+            <option value="19- AGUASCALIENTES - (Se aceptan menores de EDAD) - SEDE FESA (Por confirmar)">19- AGUASCALIENTES - (Se aceptan menores de EDAD) - SEDE FESA (Por confirmar)</option>
+            <option value="2- Deportivo Coyoacán - Carrillo Puerto 359, Gral Anaya, Benito Juárez, 03340 Ciudad de México, CDMX">2- Deportivo Coyoacán - Carrillo Puerto 359, Gral Anaya, Benito Juárez, 03340 Ciudad de México, CDMX</option>
+            <option value="2- METEPEC - Calle Pedro Ascencio No. 8 Col. La Michoacana, Metepec, México  C.P. 52166">2- METEPEC - Calle Pedro Ascencio No. 8 Col. La Michoacana, Metepec, México  C.P. 52166</option>
+            <option value="2- METEPEC - (NO se acepta el ingreso a menores de edad) - Calle Pedro Ascencio No. 8 Col. La Michoacana, Metepec, México  C.P. 52166">2- METEPEC - (NO se acepta el ingreso a menores de edad) - Calle Pedro Ascencio No. 8 Col. La Michoacana, Metepec, México  C.P. 52166</option>
+            <option value="20- TABASCO - (NO se acepta el ingreso a menores de edad)- Retorno Vía 2 Esq. Paseo Tabasco SN C. P. 86035 Villahermosa, Tab ">20- TABASCO - (NO se acepta el ingreso a menores de edad)- Retorno Vía 2 Esq. Paseo Tabasco SN C. P. 86035 Villahermosa, Tab </option>
+            <option value="20- TABASCO - Retorno Vía 2 Esq. Paseo Tabasco SN C. P. 86035 Villahermosa, Tab ">20- TABASCO - Retorno Vía 2 Esq. Paseo Tabasco SN C. P. 86035 Villahermosa, Tab </option>
+            <option value="23- TEPIC - SEDE FESA (Por confirmar)">23- TEPIC - SEDE FESA (Por confirmar)</option>
+            <option value="24- OAXACA - SEDE FESA (Por confirmar)">24- OAXACA - SEDE FESA (Por confirmar)</option>
+            <option value="25- CANCÚN - (Se aceptan menores de EDAD) -SEDE FESA (Por confirmar)">25- CANCÚN - (Se aceptan menores de EDAD) -SEDE FESA (Por confirmar)</option>
+            <option value="25- CANCÚN - SEDE FESA (Por confirmar)">25- CANCÚN - SEDE FESA (Por confirmar)</option>
+            <option value="3- LEÓN - (NO se acepta el ingreso a menores de edad) - Blvd. Adolfo Lopez Mateos 1750 Ote. 5to piso, Col. los Gavilanes, C.P. 37270, León, Gto.">3- LEÓN - (NO se acepta el ingreso a menores de edad) - Blvd. Adolfo Lopez Mateos 1750 Ote. 5to piso, Col. los Gavilanes, C.P. 37270, León, Gto.</option>
+            <option value="3- LEÓN - Blvd. Adolfo Lopez Mateos 1750 Ote. 5to piso, Col. los Gavilanes, C.P. 37270, León, Gto.">3- LEÓN - Blvd. Adolfo Lopez Mateos 1750 Ote. 5to piso, Col. los Gavilanes, C.P. 37270, León, Gto.</option>
+            <option value="3- Santa Fe - Av. Vasco de Quiroga No. 800 y Aut. Mexico-Toluca No. 8, Ciudad De Mexico - CDMX 01210">3- Santa Fe - Av. Vasco de Quiroga No. 800 y Aut. Mexico-Toluca No. 8, Ciudad De Mexico - CDMX 01210</option>
+            <option value="4- Moras - Moras No. 850, Col. Acacias, Ciudad De Mexico - CDMX 03240">4- Moras - Moras No. 850, Col. Acacias, Ciudad De Mexico - CDMX 03240</option>
+            <option value="4- QUERÉTARO - (NO se acepta el ingreso a menores de edad) - Juárez No 2 Tercer Piso Col. Centro Querétaro, Qro. C.P. 76000">4- QUERÉTARO - (NO se acepta el ingreso a menores de edad) - Juárez No 2 Tercer Piso Col. Centro Querétaro, Qro. C.P. 76000</option>
+            <option value="4- QUERÉTARO - Juárez No 2 Tercer Piso Col. Centro Querétaro, Qro. C.P. 76000">4- QUERÉTARO - Juárez No 2 Tercer Piso Col. Centro Querétaro, Qro. C.P. 76000</option>
+            <option value="5- CUERNAVACA - (NO se acepta el ingreso a menores de edad) - Motolinía No. 1, Col. Centro, C.P. 62000, Cuernavaca, Morelos">5- CUERNAVACA - (NO se acepta el ingreso a menores de edad) - Motolinía No. 1, Col. Centro, C.P. 62000, Cuernavaca, Morelos</option>
+            <option value="5- CUERNAVACA - Motolinía No. 1, Col. Centro, C.P. 62000, Cuernavaca, Morelos">5- CUERNAVACA - Motolinía No. 1, Col. Centro, C.P. 62000, Cuernavaca, Morelos</option>
+            <option value="5- Oficina Central - Venustiano Carranza No. 62 y 64 y Calle Palma No. 45, Cuauhtémoc Ciudad De Mexico - CDMX  06010">5- Oficina Central - Venustiano Carranza No. 62 y 64 y Calle Palma No. 45, Cuauhtémoc Ciudad De Mexico - CDMX  06010</option>
+            <option value="6- PUEBLA - (NO se acepta el ingreso a menores  de edad)- Av. Juárez No 2918 PB Col. La Paz CP. 72160 Puebla, Pue.">6- PUEBLA - (NO se acepta el ingreso a menores  de edad)- Av. Juárez No 2918 PB Col. La Paz CP. 72160 Puebla, Pue.</option>
+            <option value="6- PUEBLA - Av. Juárez No 2918 PB Col. La Paz CP. 72160 Puebla, Pue.">6- PUEBLA - Av. Juárez No 2918 PB Col. La Paz CP. 72160 Puebla, Pue.</option>
+            <option value="6- Tecnoparque - Av. Eje 5 Norte No. 990, piso 2, Col. Santa Bárbara CP 02230 Alca Azcapotzalco CDMX en Modulo Medico">6- Tecnoparque - Av. Eje 5 Norte No. 990, piso 2, Col. Santa Bárbara CP 02230 Alca Azcapotzalco CDMX en Modulo Medico</option>
+            <option value="7- MONTERREY - (NO se acepta el ingreso a menores de edad) - Edificio Citica, Av. Venustiano Carranza # 850 piso 12 col. Centro, Monterrey, Nuevo Leon, C.P. 64000">7- MONTERREY - (NO se acepta el ingreso a menores de edad) - Edificio Citica, Av. Venustiano Carranza # 850 piso 12 col. Centro, Monterrey, Nuevo Leon, C.P. 64000</option>
+            <option value="7- MONTERREY - Edificio Citica, Av. Venustiano Carranza # 850 piso 12 col. Centro, Monterrey, Nuevo Leon, C.P. 64000">7- MONTERREY - Edificio Citica, Av. Venustiano Carranza # 850 piso 12 col. Centro, Monterrey, Nuevo Leon, C.P. 64000</option>
+            <option value="7- Revolución - Av. Revolucion No. 1267, Col. Los Alpes CP 01010 Alvaro Obregon/ Modulo Medico Sotano, piso 11 solo para residentes">7- Revolución - Av. Revolucion No. 1267, Col. Los Alpes CP 01010 Alvaro Obregon/ Modulo Medico Sotano, piso 11 solo para residentes</option>
+            <option value="8- CHIHUAHUA - (NO se acepta el ingreso a  menores de edad)- Centro financiero, C. Manuel Doblado # 1, colonia Centro, Piso 2 ,Chihuahua, Ch., C.P. 31000">8- CHIHUAHUA - (NO se acepta el ingreso a  menores de edad)- Centro financiero, C. Manuel Doblado # 1, colonia Centro, Piso 2 ,Chihuahua, Ch., C.P. 31000</option>
+            <option value="8- CHIHUAHUA - Centro financiero, C. Manuel Doblado # 1, colonia Centro, Piso 2 ,Chihuahua, Ch., C.P. 31000">8- CHIHUAHUA - Centro financiero, C. Manuel Doblado # 1, colonia Centro, Piso 2 ,Chihuahua, Ch., C.P. 31000</option>
+            <option value="9- TORREON - Blvd. Independencia #1204, Colonia centro C.P. 27000, Torreon, Coahuila">9- TORREON - Blvd. Independencia #1204, Colonia centro C.P. 27000, Torreon, Coahuila</option>
+        </select><br><br>
+        
+        <label for="vRegionPerteneciente">Por favor, confirma la Fecha de Asistencia a la aplicación.</label>
+        <select id="vRegionPerteneciente" name="vRegionPerteneciente" class="opciones-cortas">
+            <option value=" "> </option>
+            <option value="21 de noviembre 2023">21 de noviembre 2023</option>
+            <option value="22 de noviembre 2023">22 de noviembre 2023</option>
+            <option value="23 de noviembre 2023">23 de noviembre 2023</option>
+            <option value="24 de noviembre 2023">24 de noviembre 2023</option>
+            <option value="27 de noviembre 2023">27 de noviembre 2023</option>
+            <option value="28 de noviembre 2023">28 de noviembre 2023</option>
+            <option value="29 de noviembre 2023">29 de noviembre 2023</option>
+            <option value="30 de noviembre 2023">30 de noviembre 2023</option>
+            <option value="01 de diciembre 2023">01 de diciembre 2023</option>
+        </select><br><br>
+
+        <label for="vRegionPerteneciente">¿Cuál es tu rango de edad?</label>
+        <select id="vRegionPerteneciente" name="vRegionPerteneciente" class="opciones-cortas">
+            <option value=""></option>
+            <option value="Menor a 60 Años">Menor a 60 Años</option>
+            <option value="Igual o Mayor a 60 años">Igual o Mayor a 60 años</option>
+        </select><br><br>
+
+        <label for="vRegionPerteneciente">Por favor, ingresa tu Nombre (s):</label>
+        <input type="text" id="vRegionPerteneciente" name="vRegionPerteneciente"><br><br>
+
+        <label for="vRegionPerteneciente">Apellido Paterno:</label>
+        <input type="text" id="vRegionPerteneciente" name="vRegionPerteneciente"><br><br>
+
+        <label for="vRegionPerteneciente">Apellido Materno:</label>
+        <input type="text" id="vRegionPerteneciente" name="vRegionPerteneciente"><br><br>
+
+        <label for="vRegionPerteneciente">Edad:</label>
+        <input type="text" id="vRegionPerteneciente" name="vRegionPerteneciente"><br><br>
+
+        <label for="vRegionPerteneciente">Sexo:</label>
+        <select id="vRegionPerteneciente" name="vRegionPerteneciente" class="opciones-mas-cortas">
+        <option value=""></option>
+        <option value="Femenino">Femenino</option>
+        <option value="Masculino">Masculino</option>    
+        </select><br><br>
+
+        <label for="vRegionPerteneciente">Direccón de correo electrónico:</label>
+        <input type="text" id="vRegionPerteneciente" name="vRegionPerteneciente"><br><br>
+
+        <label for="vRegionPerteneciente">Teléfono de contacto:</label>
+        <input type="text" id="vRegionPerteneciente" name="vRegionPerteneciente"><br><br>
+
+        <label for="vRegionPerteneciente">¿Consideras llevar acompñantes?</label>
+        <select id="vRegionPerteneciente" name="vRegionPerteneciente">
+        <option value=""></option>
+        <option value="Sí">Sí</option>
+        <option value="No">No</option>
+        </select><br><br>
+
+        <label for="vRegionPerteneciente">¿Cuántos acompañantes asistirán contigo?</label>
+        <input type="text" id="vRegionPerteneciente" name="vRegionPerteneciente"><br><br>
+
+        <label for="vRegionPerteneciente">Vacuna a aplicar:</label>
+        <select type="text" id="vRegionPerteneciente" name="vRegionPerteneciente" class="opciones-cortas">
+        <option value=""></option>
+        <option value="INFLUENZA">INFLUENZA</option>
+        <option value="NEUMOCOCO">NEUMOCOCO</option>
+        <option value="AMBAS">AMBAS</option>
+        </select><br><br>
+
+        <label for="vRegionPerteneciente">Se cobra:</label>
+        <select id="vRegionPerteneciente" name="vRegionPerteneciente" class="opciones-cortas">
+        <option value=""></option>
+        <option value="SI SE COBRA">SI SE COBRA</option>
+        <option value="NO SE COBRA">NO SE COBRA</option>
+        </select><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
